@@ -12,7 +12,7 @@ const App = () => {
       <Nom stilo={styles.estilDeText} unNom='Equipo Sergio Arianda AE3'></Nom>
       <EntradaDEmail 
       label='Email'
-      placeHolder='exercici4@floridauniversitaria.es'
+      placeholder='exercici4@floridauniversitaria.es'
       />
       <EntradaDeTelefon 
        label='Telefon'
