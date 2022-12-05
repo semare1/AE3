@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { HelperText, TextInput } from 'react-native-paper';
 
-export const EntradaDEmail = () => {
+export const EntradaDEmail = (props) => {
     const [text, setText] = useState('');
     const [checked, setChecked] = useState(false);
 
@@ -14,9 +14,10 @@ export const EntradaDEmail = () => {
 
     return (
         <View>
-            <TextInput label="Email"
+            <TextInput label={props.label}
                 value={text}
                 keyboardType="email-address"
+                placeholder={props.placeholder}
                 right={<TextInput.Icon icon="check" />}
                 onChangeText={text => setText(text)} />
             <HelperText type="error" visible={hasErrors()}>

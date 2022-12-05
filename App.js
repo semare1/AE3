@@ -10,8 +10,14 @@ const App = () => {
   return (
     <PaperProvider>
       <Nom stilo={styles.estilDeText} unNom='Equipo Sergio Arianda AE3'></Nom>
-      <EntradaDEmail />
-      <EntradaDeTelefon />
+      <EntradaDEmail 
+      label='Email'
+      placeHolder='exercici4@floridauniversitaria.es'
+      />
+      <EntradaDeTelefon 
+       label='Telefon'
+       placeholder='657689623'
+      />
     </PaperProvider>
   );
 };

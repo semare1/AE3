@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { HelperText, TextInput } from 'react-native-paper';
 
-export const EntradaDeTelefon = () => {
+export const EntradaDeTelefon = (props) => {
     const [text, setText] = useState('');
     const [checked, setChecked] = useState(false);
 
@@ -14,9 +14,10 @@ export const EntradaDeTelefon = () => {
 
     return (
         <View>
-            <TextInput label="Numero de telefon"
+            <TextInput label={props.label}
                 value={text}
                 keyboardType="numeric"
+                placeholder={props.placeholder}
                 right={<TextInput.Icon icon="check" />}
                 onChangeText={text => setText(text)} />
             <HelperText type="error" visible={hasErrors()}>
