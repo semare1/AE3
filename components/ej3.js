@@ -34,7 +34,8 @@ export const EntradaDeTelefon = () => {
             <TextInput label="Numero de telefon"
                 value={text}
                 keyboardType="numeric"
-                right={hasErrors1()}
+                maxLength={13}
+                right={hasErrorsInterna()}
                 //maxLength={13}
                 onChangeText={text => setText(text)} />
             <HelperText type="error" visible={hasErrorsInterna()}>
