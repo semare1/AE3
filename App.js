@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Provider as PaperProvider } from 'react-native-paper';
 import { StyleSheet, } from 'react-native';
@@ -9,7 +8,7 @@ import { EntradaDeTelefon } from './components/ej3';
 const App = () => {
   return (
     <PaperProvider>
-      <Nom stilo={styles.estilDeText} unNom='Equipo Sergio Arianda AE3'></Nom>
+      <Nom stilo={styles.estilDeText} unNom='Equipo Sergio Ariadna AE3'></Nom>
       <EntradaDEmail />
       <EntradaDeTelefon />
     </PaperProvider>
