@@ -13,7 +13,7 @@ export const EntradaDEmail = () => {
 
     const hasErrors1 = () => {
         const expReg = /^[a-zA-Z]+\@[a-zA-Z\_\-0-9]+\.[a-z]{2,5}$/;
-        return (expReg.test(text) && <TextInput.Icon icon="check" iconColor = "green" />);
+        return (expReg.test(text) && <TextInput.Icon icon="check" iconColor="green" />);
     }
 
     return (
@@ -24,7 +24,7 @@ export const EntradaDEmail = () => {
                 right={hasErrors1()}
                 onChangeText={text => setText(text)} />
             <HelperText type="error" visible={hasErrors()}>
-                El Email introduit no es valid!
+                {text.length === 0 ? '' : 'El Email introduit no es valid!'}
             </HelperText>
         </View>
     );
