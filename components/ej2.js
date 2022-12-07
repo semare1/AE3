@@ -13,7 +13,7 @@ export const EntradaDEmail = () => {
 
     const hasErrors1 = () => {
         const expReg = /^[a-zA-Z]+\@[a-zA-Z\_\-0-9]+\.[a-z]{2,5}$/;
-        return (expReg.test(text) ? <TextInput.Icon icon="check" iconColor = "green" /> : <TextInput.Icon icon="" />);
+        return (expReg.test(text) && <TextInput.Icon icon="check" iconColor = "green" />);
     }
 
     return (
