@@ -8,7 +8,6 @@ export const EntradaDeTelefon = () => {
     const expRegInterna = /^[\+]?\d{2} \d{9}$/;
 
     const verifica = () => {
-        console.log(text + '-' + expRegNacional.test(text) + '-' + expRegInterna.test(text))
         if (text.length > 0) {
             return (expRegNacional.test(text) || expRegInterna.test(text)) && <TextInput.Icon icon="check" iconColor="green" />
 
