@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import { StyleSheet, View } from 'react-native';
 import { HelperText, TextInput } from 'react-native-paper';
 
 export const EntradaDeTelefon = (props) => {
@@ -8,10 +9,8 @@ export const EntradaDeTelefon = (props) => {
     const expRegInterna = /^[\+]?\d{2} \d{9}$/;
 
     const verifica = () => {
-        console.log(text + '-' + expRegNacional.test(text) + '-' + expRegInterna.test(text))
         if (text.length > 0) {
             return (expRegNacional.test(text) || expRegInterna.test(text)) && <TextInput.Icon icon="check" iconColor="green" />
-
         }
     }
 

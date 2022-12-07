@@ -1,7 +1,6 @@
-
 import React from 'react';
 import { Provider as PaperProvider } from 'react-native-paper';
-import { StyleSheet, } from 'react-native';
+import { StyleSheet } from 'react-native';
 import { Nom } from './components/ej1';
 import { EntradaDEmail } from './components/ej2';
 import { EntradaDeTelefon } from './components/ej3';
@@ -9,14 +8,14 @@ import { EntradaDeTelefon } from './components/ej3';
 const App = () => {
   return (
     <PaperProvider>
-      <Nom stilo={styles.estilDeText} unNom='Equipo Sergio Arianda AE3'></Nom>
-      <EntradaDEmail 
-      label='Email'
-      placeholder='exercici4@floridauniversitaria.es'
+      <Nom stilo={styles.estilDeText} unNom='Equipo Sergio Ariadna AE3'></Nom>
+      <EntradaDEmail
+        label='Email'
+        placeholder='exercici4@floridauniversitaria.es'
       />
-      <EntradaDeTelefon 
-       label='Telefon'
-       placeholder='657689623'
+      <EntradaDeTelefon
+        label='Telefon'
+        placeholder='657689623'
       />
     </PaperProvider>
   );
